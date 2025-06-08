@@ -38,7 +38,7 @@ module 4brca_7seg (
         end
     end
 
-
+// 이거 ㅂ보세요요
 endmodule
 
 
