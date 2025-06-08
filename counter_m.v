@@ -19,7 +19,10 @@ module counter (
     input wire clr
 );
     always @(posedge clk) begin
-        if (clr || q==4'b1001) begin
+        if (clr) begin   // 수정 
+            q <= 0;
+        end
+        else if (q==4'b1001) begin
             q <= 4'b0000;
         end
         else begin

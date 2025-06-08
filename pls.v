@@ -42,6 +42,7 @@ module passwordlocksystem(
         blink <= ~blink;
         if (rst) begin
             state <= ST_IDLE;
+            blink <= 0;
             inputpw <= 16'd0;
             LEDR <= 0;
             LEDG <= 0;

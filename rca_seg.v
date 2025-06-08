@@ -43,7 +43,8 @@ module rca_seg (
     end
 endmodule
 
-
+//위의 코드가 쿼터스에서 %,/ 연산자를 지원해서 동작하는것
+//하지만 하드웨어를 기술할때는 아래와 같이 일일히 mapping 하는것이 좋음
 /*
 module rca_seg (
     input [3:0] X,

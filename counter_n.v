@@ -4,7 +4,10 @@ module counter_n (
     input wire clr
 );
     always @(posedge clk) begin
-        if (clr || q == 6'd59) begin
+        if (clr) begin
+            q <= 0;
+        end
+        else if (q == 6'd59) begin
             q <= 0;
         end
         else begin
