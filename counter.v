@@ -1,12 +1,17 @@
-module counter_n (
-    output reg [5:0] q,
+module counter (
+    output reg [3:0] q,
     input wire clk,
     input wire clr
 );
     always @(posedge clk) begin
-        if (clr || q == 6'd59) begin
+        if (!clr)begin
             q <= 0;
         end
+        
+        else if (q == 4'd15) begin
+            q <= 0;
+        end
+        
         else begin
             q <= q + 1;
         end
