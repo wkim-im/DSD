@@ -14,7 +14,7 @@ module alu (
       3'b101 : OUT = IN0<<1;
       3'b110 : OUT = IN0>>1;
       3'b111 : OUT = (IN0>IN1);
-        default: OUT = 4'b0000;
+      default: OUT = 4'b0000;
     endcase        
     end
     
