@@ -1,5 +1,5 @@
 module counter (
-    output reg [3:0] q,
+    output reg [3:0] q, //조정정
     input wire clk,
     input wire clr
 );

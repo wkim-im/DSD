@@ -4,7 +4,7 @@ module alu (
     input wire [3:0] IN0,
     input wire [3:0] IN1
 );
-    always @(sel,IN0,IN1) begin
+    always @(sel,IN0,IN1) begin // always @* 또는 always @(*) 사용 가능
     case (sel)
       3'b000 : OUT = IN0;
       3'b001 : OUT = IN0+IN1;
