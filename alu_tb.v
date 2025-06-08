@@ -20,3 +20,5 @@ module alu_tb;
         #2 $finish;
     end
 endmodule
+
+//alu 수정중입니다 수정하고있는데??
