@@ -1,4 +1,4 @@
-module rca_wtff (
+module rcc_wtff (
     output wire [3:0] Q,
     input wire clk,
     input wire rst
