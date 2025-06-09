@@ -6,8 +6,9 @@ module stopwatch (
 );
     wire clk;
     wire [5:0] out;
- 
-    counter cnt(.q(out),.clk(clk),.clr(rst));
+    
+    clk_div clkd (.clk_50(clk_50),.rst(rst),.clk_1(clk));
+    counter_n cnt(.q(out),.clk(clk),.clr(rst));
 
     
     reg [3:0] B1;
@@ -40,3 +41,8 @@ module stopwatch (
 
 
 endmodule
+
+    always @(posedge clk) begin
+        
+        
+    end
